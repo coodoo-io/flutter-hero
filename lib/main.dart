@@ -21,10 +21,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  firstPage createState() => firstPage();
+  FirstPage createState() => FirstPage();
 }
 
-class firstPage extends State<MyHomePage> {
+class FirstPage extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +39,7 @@ class firstPage extends State<MyHomePage> {
             context,
             PageRouteBuilder(
                       transitionDuration: Duration(seconds: 2),
-                      pageBuilder: (_, __, ___) => secondPage(
+                      pageBuilder: (_, __, ___) => SecondPage(
           )));},
         child: Icon(Icons.thumb_up),
         ), 
@@ -47,7 +47,7 @@ class firstPage extends State<MyHomePage> {
   }
 }
 
-class secondPage extends StatelessWidget{
+class SecondPage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
